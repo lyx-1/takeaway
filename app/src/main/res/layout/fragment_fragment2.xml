@@ -1,0 +1,137 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#aaaaaa"
+    tools:context="com.example.lenovo.Take_out.Fragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:onClick="click"
+            android:id="@+id/infomation"
+            android:background="#ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <ImageView
+                android:id="@+id/image1"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_toRightOf="@id/image1"
+                android:textSize="30sp"
+                android:text="账户名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@id/image1"
+                android:text="所在地：南京"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/sign_ap"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp">
+            <RelativeLayout
+                android:onClick="click"
+                android:id="@+id/sale"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/ding"
+                    android:src="@drawable/documents"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:layout_toRightOf="@id/ding"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:text="我的订单"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:textSize="30dp"
+                    android:text=">"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:onClick="click"
+                android:id="@+id/shoucang"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp">
+                <ImageView
+                    android:id="@+id/shou"
+                    android:src="@drawable/mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent" />
+                <TextView
+                    android:layout_toRightOf="@id/shou"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20sp"
+                    android:gravity="center_vertical"
+                    android:text="我的收藏"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentRight="true"
+                    android:gravity="center_vertical"
+                    android:textSize="30dp"
+                    android:text=">"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </RelativeLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:onClick="click"
+            android:id="@+id/addr"
+            android:layout_marginTop="20dp"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <ImageView
+                android:id="@+id/address"
+                android:src="@drawable/notes"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent" />
+            <TextView
+                android:layout_toRightOf="@id/address"
+                android:layout_marginRight="20dp"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:text="收货地址"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <TextView
+                android:layout_marginRight="20dp"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                android:textSize="30dp"
+                android:text=">"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</FrameLayout>
