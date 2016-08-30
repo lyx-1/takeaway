@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ADADAD"
+
+    tools:context="com.example.l.myapplication.OrderActivity">
+    
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/buy_address"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="买家名字电话&#10;买家地址"
+                android:textSize="24sp"
+                android:gravity="left"
+                android:layout_marginTop="10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#DBDBDB"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="送达时间"
+                    android:textSize="24sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/arrive_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:text="14:14"
+                    android:textSize="24sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#DBDBDB">
+
+                <TextView
+                    android:id="@+id/saler_name2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="商家店名"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="10dp"/>
+                <ListView
+                    android:id="@+id/submit_dishinfo"
+                    android:layout_width="match_parent"
+                    android:layout_below="@id/saler_name2"
+                    android:layout_height="200dp"></ListView>
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/people_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="用餐人数"/>
+
+            <EditText
+                android:id="@+id/order_note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:hint="订单备注"/>
+
+
+
+        </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#212121"
+        android:layout_alignParentBottom="true"
+        >
+        <TextView
+            android:id="@+id/waitpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="待支付"
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+        <TextView
+            android:id="@+id/all_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:layout_toRightOf="@id/waitpay"
+            android:textSize="24sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"/>
+        <Button
+            android:id="@+id/submit_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交订单"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

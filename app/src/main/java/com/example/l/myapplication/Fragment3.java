@@ -9,17 +9,12 @@ import android.view.ViewGroup;
 
 
 /**
- * Created by 田起光 on 2016/8/27.
+ * Created by 刘宇轩 on 2016/8/27.
  */
-
-/**
- * A simple {@link Fragment} subclass.
- */
-//此碎片显示我的
-public class Fragment2 extends Fragment {
+public class Fragment3 extends Fragment {
 
 
-    public Fragment2() {
+    public Fragment3() {
         // Required empty public constructor
     }
 
@@ -28,7 +23,7 @@ public class Fragment2 extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragment2, container, false);
+        return inflater.inflate(R.layout.fragment_fragment3, container, false);
     }
 
 }

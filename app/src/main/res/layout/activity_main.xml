@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.lenovo.Take_out.MainActivity">
+    tools:context="com.example.l.myapplication.TakeawayActivity">
 
     <RadioGroup
         android:id="@+id/group"
@@ -15,7 +15,6 @@
         android:layout_height="wrap_content">
         <RadioButton
             android:onClick="click"
-
             android:button="@null"
             android:id="@+id/info"
             android:text="外卖"
@@ -24,6 +23,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
+        <RadioButton
+            android:onClick="click"
+            android:button="@null"
+            android:id="@+id/order"
+            android:text="订单"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
         <RadioButton
             android:onClick="click"
             android:id="@+id/user"

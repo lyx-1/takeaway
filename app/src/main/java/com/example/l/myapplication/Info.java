@@ -1,16 +1,17 @@
 package com.example.l.myapplication;
 
 /**
- * Created by lenovo on 2016/8/27.
+ * Created by 田起光 on 2016/8/27.
  */
-public class Newa1 {
+//商家信息类
+public class Info {
     private String sale;
     private String name;
     private String time;
     private String send;
     private int picture;
 
-    public Newa1(String name, String sale, String time, String send, int picture) {
+    public Info(String name, String sale, String time, String send, int picture) {
         this.name = name;
         this.sale = sale;
         this.time = time;

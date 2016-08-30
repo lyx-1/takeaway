@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:id="@+id/dish_photo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY" />
+    <TextView
+        android:layout_toRightOf="@id/dish_photo"
+        android:id="@+id/dish_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textSize="24sp"
+        android:text="菜名"
+        />
+    <TextView
+        android:id="@+id/dish_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dish_name"
+        android:layout_toRightOf="@id/dish_photo"
+        android:text="价格"/>
+    <Button
+        android:id="@+id/plus_dish"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/plus"/>
+    <TextView
+        android:id="@+id/dish_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/plus_dish"
+        android:layout_marginRight="10dp"
+        android:text="0"
+        />
+    <Button
+        android:id="@+id/minus_dish"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@id/dish_number"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/minus"/>
+
+
+
+
+
+
+</RelativeLayout>

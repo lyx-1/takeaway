@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/submit_dishname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="菜名"
+        android:textSize="18sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+    <TextView
+        android:id="@+id/submit_dishprice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="单价"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"/>
+    <TextView
+        android:id="@+id/submit_dishnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/submit_dishprice"
+        android:text="数量"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="50dp"
+        android:textSize="18sp"/>
+
+</RelativeLayout>

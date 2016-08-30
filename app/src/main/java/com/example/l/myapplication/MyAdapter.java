@@ -13,7 +13,7 @@ import android.widget.TextView;
 import java.util.List;
 
 /**
- * Created by lenovo on 2016/8/26.
+ * Created by 田起光 on 2016/8/27.
  */
 public class MyAdapter extends BaseAdapter{
     private Context mcontext;
@@ -46,7 +46,7 @@ public MyAdapter(List<Object> list,Context mcontext){
     public int getItemViewType(int position) {
         if (list.get(position) instanceof News) {
             return 0;
-        } else if (list.get(position) instanceof Newa1) {
+        } else if (list.get(position) instanceof Info) {
             return 1;
         } else {
             return super.getItemViewType(position);
@@ -103,19 +103,19 @@ public MyAdapter(List<Object> list,Context mcontext){
         Object obj = list.get(position);
         switch (type){
             case 0:
-                News app = (News) obj;
-                if(app != null){
-                    newsViewHolder.image.setImageResource(app.getImage());
+                News news = (News) obj;
+                if(news != null){
+                    newsViewHolder.image.setImageResource(news.getImage());
                 }
                 break;
             case 1:
-                Newa1 book = (Newa1) obj;
-                if(book != null){
-//                    newaViewHolder.picture.setImageResource(book.getPicture());
-                    newaViewHolder.name.setText(book.getName());
-                    newaViewHolder.sale.setText(book.getSale());
-                    newaViewHolder.send.setText(book.getSend());
-                    newaViewHolder.time.setText(book.getTime());
+                Info info = (Info) obj;
+                if(info != null){
+                    newaViewHolder.picture.setImageResource(info.getPicture());
+                    newaViewHolder.name.setText(info.getName());
+                    newaViewHolder.sale.setText(info.getSale());
+                    newaViewHolder.send.setText(info.getSend());
+                    newaViewHolder.time.setText(info.getTime());
 
                 }
 
