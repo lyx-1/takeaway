@@ -7,7 +7,6 @@
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
-
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -36,18 +35,21 @@
                 android:text="所在地：南京"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
+            <TextView
+                android:text=">"
+                android:textSize="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
         </RelativeLayout>
-        <LinearLayout
-
-            android:orientation="vertical"
-            android:layout_marginTop="20dp"
-            android:background="@mipmap/sign_ap"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp">
             <RelativeLayout
                 android:onClick="click"
                 android:id="@+id/sale"
                 android:orientation="horizontal"
+                android:background="#ffffff"
+                android:layout_marginTop="30dp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp">
                 <ImageView
@@ -75,7 +77,9 @@
             <RelativeLayout
                 android:onClick="click"
                 android:id="@+id/shoucang"
+                android:background="#ffffff"
                 android:orientation="horizontal"
+                android:layout_marginTop="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="50dp">
                 <ImageView
@@ -100,12 +104,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent" />
             </RelativeLayout>
-
-        </LinearLayout>
         <RelativeLayout
             android:onClick="click"
             android:id="@+id/addr"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="10dp"
             android:background="#ffffff"
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -133,5 +135,4 @@
                 android:layout_height="match_parent" />
         </RelativeLayout>
     </LinearLayout>
-
 </FrameLayout>

@@ -1,5 +1,6 @@
 package com.example.l.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -55,16 +56,18 @@ public class TakeawayActivity extends AppCompatActivity {
                 transaction.commit();
                 break;
             case R.id.infomation:
-                transaction.show(fragment3);
-                transaction.commit();
+                Intent intent1=new Intent(TakeawayActivity.this,MainActivity1.class);
+                startActivity(intent1);
+                finish();
                 break;
             case R.id.sale:
                 transaction.show(fragment1);
                 transaction.commit();
                 break;
             case R.id.shoucang:
-                transaction.show(fragment2);
-                transaction.commit();
+                Intent intent2=new Intent(TakeawayActivity.this,CollectionActivity.class);
+                startActivity(intent2);
+                finish();
                 break;
             case R.id.addr:
                 transaction.show(fragment1);

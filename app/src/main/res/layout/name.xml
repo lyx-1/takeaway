@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#d1cccc"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dxh.application.Name">
+    <RelativeLayout
+        android:background="#f7f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/marchback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:text="修改昵称"
+            android:textSize="40dp"
+            android:textColor="#0d0c0c"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:background="#080808"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <EditText
+        android:id="@+id/edit"
+        android:textColor="#363535"
+        android:hint="   昵称"
+        android:textColorHint="#a9a0a0"
+        android:background="#f9f8f8"
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/save"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:text="保存"
+            android:textSize="30dp"
+            android:background="#f13d0b"
+            android:textColor="#f5f4f4"
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

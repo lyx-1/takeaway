@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#e4e0e0"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dxh.application.Name">
+    <RelativeLayout
+        android:background="#f7f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/marchback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:text="收货地址列表"
+            android:textSize="40dp"
+            android:textColor="#0d0c0c"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+        <TextView
+            android:text="编辑"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#ec0505"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+    <EditText
+        android:background="#080808"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/build"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="40dp"
+            android:text="新增地址"
+            android:textSize="30dp"
+            android:background="#f13d0b"
+            android:textColor="#f5f4f4"
+            android:gravity="center"
+            android:layout_width="350dp"
+            android:layout_marginBottom="40dp"
+            android:layout_height="wrap_content" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

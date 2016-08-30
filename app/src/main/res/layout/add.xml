@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#e4e0e0"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dxh.application.Name">
+    <RelativeLayout
+        android:background="#f7f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/marchback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:gravity="center"
+            android:text="新增收货地址"
+            android:textSize="40dp"
+            android:textColor="#0d0c0c"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:background="#f7f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="*收货人"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#0e0e0e"
+            android:layout_width="90dp"
+            android:layout_height="50dp" />
+        <EditText
+            android:hint="1-15个字符"
+            android:textColorHint="#969595"
+            android:layout_alignParentRight="true"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="#0b0b0b"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#f7f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="*省"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#0e0e0e"
+            android:layout_width="40dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:background="@mipmap/march"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="#0b0b0b"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#f7f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="*市"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#0e0e0e"
+            android:layout_width="40dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/march"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="#0b0b0b"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#f7f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="*区"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#0e0e0e"
+            android:layout_width="40dp"
+            android:layout_height="50dp" />
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:background="@mipmap/march"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="#0b0b0b"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#f7f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="*地址"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#0e0e0e"
+            android:layout_width="65dp"
+            android:layout_height="50dp" />
+        <EditText
+            android:hint="不必重复填写省市区信息"
+            android:textColorHint="#969595"
+            android:layout_alignParentRight="true"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="#0b0b0b"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#f7f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="*电话"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="#0e0e0e"
+            android:layout_width="65dp"
+            android:layout_height="50dp" />
+        <EditText
+            android:layout_alignParentRight="true"
+            android:layout_width="300dp"
+            android:layout_height="50dp" />
+        <EditText
+            android:background="#0b0b0b"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:background="#f7f0f0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text=" 邮编"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="#0e0e0e"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+        <EditText
+            android:hint="请输入6位邮政编码"
+            android:textColorHint="#969595"
+            android:layout_alignParentRight="true"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:background="#0b0b0b"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/ok"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:text="确定"
+            android:textSize="30dp"
+            android:background="#f13d0b"
+            android:textColor="#f5f4f4"
+            android:gravity="center"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>
