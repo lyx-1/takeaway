@@ -4,33 +4,33 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.l.myapplication.TakeawayActivity">
+    tools:context="com.example.lenovo.Take_out.MainActivity">
 
     <RadioGroup
         android:id="@+id/group"
-        android:layout_alignParentBottom="true"
-
+        android:background="#aaaaaa"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="40dp">
         <RadioButton
-            android:onClick="click"
+            android:onClick="click_order"
             android:button="@null"
-            android:id="@+id/info"
-            android:text="外卖"
+            android:id="@+id/list_ordering"
+            android:text="待付款"
             android:textSize="20sp"
             android:gravity="center"
+            android:layout_marginTop="10dp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"/>
-
         <RadioButton
-            android:onClick="click"
-            android:id="@+id/user"
+            android:onClick="click_order"
+            android:id="@+id/list_ordered"
             android:button="@null"
-            android:text="我的"
+            android:text="已完成"
             android:textSize="20sp"
             android:gravity="center"
+            android:layout_marginTop="10dp"
             android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="wrap_content" />
@@ -38,8 +38,8 @@
 
 
     <FrameLayout
-        android:layout_above="@id/group"
-        android:id="@+id/frame"
+        android:layout_below="@id/group"
+        android:id="@+id/frame_order"
         android:layout_width="match_parent"
         android:layout_height="match_parent"></FrameLayout>
 </RelativeLayout>

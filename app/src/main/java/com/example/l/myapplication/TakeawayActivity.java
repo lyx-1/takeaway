@@ -12,7 +12,6 @@ public class TakeawayActivity extends AppCompatActivity {
 
     Fragment1 fragment1;
     Fragment2 fragment2;
-    Fragment3 fragment3;
     FragmentManager manager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,13 +23,10 @@ public class TakeawayActivity extends AppCompatActivity {
 
         fragment1=new Fragment1();
         fragment2=new Fragment2();
-        fragment3=new Fragment3();
         transaction.add(R.id.frame, fragment1, "fragment1");
         transaction.add(R.id.frame, fragment2, "fragment2");
-        transaction.add(R.id.frame, fragment3, "fragment3");
         transaction.show(fragment1);
         transaction.hide(fragment2);
-        transaction.hide(fragment3);
         transaction.commit();
 
 
@@ -40,17 +36,14 @@ public class TakeawayActivity extends AppCompatActivity {
         FragmentTransaction transaction=manager.beginTransaction();
         transaction.hide(fragment1);
         transaction.hide(fragment2);
-        transaction.hide(fragment3);
+
 
         switch (view.getId()){
             case R.id.info:
                 transaction.show(fragment1);
                 transaction.commit();
                 break;
-            case R.id.order:
-                transaction.show(fragment3);
-                transaction.commit();
-                break;
+
             case R.id.user:
                 transaction.show(fragment2);
                 transaction.commit();
@@ -61,8 +54,8 @@ public class TakeawayActivity extends AppCompatActivity {
                 finish();
                 break;
             case R.id.sale:
-                transaction.show(fragment1);
-                transaction.commit();
+                Intent intent=new Intent(TakeawayActivity.this,MyOrderActivity.class);
+                startActivity(intent);
                 break;
             case R.id.shoucang:
                 Intent intent2=new Intent(TakeawayActivity.this,CollectionActivity.class);

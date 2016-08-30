@@ -27,6 +27,8 @@
         <activity android:name=".Name"></activity>
         <activity android:name=".Number"></activity>
         <activity android:name=".Password"></activity>
+        <activity android:name=".MyOrderActivity"></activity>
+        <activity android:name=".MyOrderInfoActivity"></activity>
 
     </application>
 
